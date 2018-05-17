@@ -1,2 +1,10 @@
-<h1>Cocktails#new</h1>
-<p>Find me in app/views/cocktail/new.html.erb</p>
+
+<h2>Here you can create a new amazing Cocktail</h2>
+<%= form_for(@cocktail) do |f| %>
+  <div class="form-group">
+    <%= f.label :name %>
+    <%= f.text_field :name, class: 'form-control' %>
+  </div>
+
+  <%= f.submit class: 'btn btn-primary' %>
+<% end %>
